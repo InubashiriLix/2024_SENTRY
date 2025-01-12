@@ -1,0 +1,11 @@
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: .\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: Inc\FreeRTOSConfig.h
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+.\build\standard_robot\.obj\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o: Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h

@@ -1,0 +1,4 @@
+arm-none-eabi-objcopy --update-section ER_IROM1="C:\Users\WJJ\AppData\Local\Temp\\standard_robot_autftnQa.bin" "d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\build\standard_robot\standard_robot.axf" "d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\build\standard_robot\standard_robot.elf"
+
+arm-none-eabi-objcopy: d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\build\standard_robot\standard_robot.elf: warning: allocated section `RW_IRAM1' not in segment
+

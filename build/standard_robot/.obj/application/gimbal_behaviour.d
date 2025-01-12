@@ -1,0 +1,16 @@
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: .\application\gimbal_behaviour.c
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: .\application\gimbal_behaviour.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: .\application\struct_typedef.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: .\application\gimbal_task.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: .\application\CAN_receive.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: components/controller/pid.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: .\application\remote_control.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: bsp/boards/bsp_rc.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: components/algorithm/Include/arm_math.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: Drivers/CMSIS/Include/core_cm4.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: Drivers/CMSIS/Include/cmsis_version.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: Drivers/CMSIS/Include/cmsis_compiler.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: Drivers/CMSIS/Include/cmsis_armcc.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: bsp/boards/bsp_buzzer.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: .\application\detect_task.h
+.\build\standard_robot\.obj\application\gimbal_behaviour.o: components/algorithm/user_lib.h
