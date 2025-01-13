@@ -135,6 +135,8 @@ chassis_move_t chassis_move;
   * @param[in]      pvParameters: 空
   * @retval         none
   */
+
+uint8_t debug_flag_1 = 0;
 void chassis_task(void const *pvParameters)
 {
   //wait a time
@@ -151,15 +153,11 @@ void chassis_task(void const *pvParameters)
     //set chassis control mode
     //设置底盘控制模式
     chassis_set_mode(&chassis_move);
-    // TODO: right up -> sentry 
-    if (chassis_move.chassis_RC->rc.s[0] == RC_SW_UP) {
-      chassis_move.vx = motion_rx.linear_x;
-      chassis_move.vy = motion_rx.linear_y;
-      chassis_move.wz = motion_rx.angular_z;
-    }
+
     //when mode changes, some data save
     //模式切换数据保存
     chassis_mode_change_control_transit(&chassis_move);
+
     //chassis data update
     //底盘数据更新
     chassis_feedback_update(&chassis_move);
@@ -168,6 +166,20 @@ void chassis_task(void const *pvParameters)
     chassis_set_contorl(&chassis_move);
     //chassis control pid calculate
     //底盘控制PID计算
+
+// NOTE: this way sir
+    // TODO: right up -> sentry 
+    if (chassis_move.chassis_RC->rc.s[0] == RC_SW_UP) {
+      debug_flag_1 = 1;
+      // chassis_move.vx = motion_rx.linear_x;
+      // chassis_move.vy = motion_rx.linear_y;
+      // chassis_move.wz = motion_rx.angular_z;
+
+      chassis_move.vx_set = motion_rx.linear_x;
+      chassis_move.vy_set = motion_rx.linear_y;
+      chassis_move.wz_set = motion_rx.angular_z;
+    }
+
     chassis_control_loop(&chassis_move);
 
     //make sure  one motor is online at least, so that the control CAN message can be received
@@ -374,7 +386,6 @@ static void chassis_feedback_update(chassis_move_t *chassis_move_update)
   chassis_move_update->vx = (-chassis_move_update->motor_chassis[0].speed + chassis_move_update->motor_chassis[1].speed + chassis_move_update->motor_chassis[2].speed - chassis_move_update->motor_chassis[3].speed) * MOTOR_SPEED_TO_CHASSIS_SPEED_VX;
   chassis_move_update->vy = (-chassis_move_update->motor_chassis[0].speed - chassis_move_update->motor_chassis[1].speed + chassis_move_update->motor_chassis[2].speed + chassis_move_update->motor_chassis[3].speed) * MOTOR_SPEED_TO_CHASSIS_SPEED_VY;
   chassis_move_update->wz = (-chassis_move_update->motor_chassis[0].speed - chassis_move_update->motor_chassis[1].speed - chassis_move_update->motor_chassis[2].speed - chassis_move_update->motor_chassis[3].speed) * MOTOR_SPEED_TO_CHASSIS_SPEED_WZ / MOTOR_DISTANCE_TO_CENTER;
-
   //calculate chassis euler angle, if chassis add a new gyro sensor,please change this code
   //计算底盘姿态角度, 如果底盘上有陀螺仪请更改这部分代码
   chassis_move_update->chassis_yaw = rad_format(*(chassis_move_update->chassis_INS_angle + INS_YAW_ADDRESS_OFFSET) - chassis_move_update->chassis_yaw_motor->relative_angle);

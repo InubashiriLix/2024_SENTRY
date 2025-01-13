@@ -173,9 +173,9 @@ typedef struct MotionRx {
     uint8_t header;       // 第 0-3 位
     float yaw;            // 第 4-7 位
     float pitch;          // 第 4-11 位
-    float actual1;        // 第 8-15 位
+    float pitch_actual;        // 第 8-15 位
     uint8_t raw1[4];      // 第 12-19 位
-    float actual2;        // 第 12-23 位
+    float yaw_actual;        // 第 12-23 位
     uint8_t raw2[4];      // 第 19～27位
     float linear_x;       // 第 24～31 位
     float linear_y;       // 第 28～35 位
