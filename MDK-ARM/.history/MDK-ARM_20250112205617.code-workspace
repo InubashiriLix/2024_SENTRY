@@ -24,8 +24,7 @@
             }
         ],
         "files.associations": {
-            "usb_task.h": "c",
-            "chassis_power_control.h": "c"
+            "usb_task.h": "c"
         }
     },
     "extensions": {}

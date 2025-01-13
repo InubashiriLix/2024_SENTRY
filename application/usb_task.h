@@ -31,6 +31,8 @@
 #include "chassis_power_control.h"
 #include "referee.h"
 #include "gimbal_task.h"
+
+
 typedef enum {
     CLASSIC = 0,
     WIND    = 1,
@@ -78,14 +80,14 @@ typedef struct ProjectileTx_slow {
     // 2 -> blue
     uint8_t current_side_color;
     // the enemt_hp
-     uint16_t enemy_1_robot_HP;
-     uint16_t enemy_2_robot_HP;
-     uint16_t enemy_3_robot_HP;
-     uint16_t enemy_4_robot_HP;
-     uint16_t enemy_5_robot_HP;
-     uint16_t enemy_7_robot_HP;
-     uint16_t enemy_outpost_HP;
-     uint16_t enemy_base_HP;
+    uint16_t enemy_1_robot_HP;
+    uint16_t enemy_2_robot_HP;
+    uint16_t enemy_3_robot_HP;
+    uint16_t enemy_4_robot_HP;
+    uint16_t enemy_5_robot_HP;
+    uint16_t enemy_7_robot_HP;
+    uint16_t enemy_outpost_HP;
+    uint16_t enemy_base_HP;
 
     // field events
     uint32_t field_events;
@@ -100,11 +102,11 @@ typedef struct ProjectileTx_slow {
     uint8_t winner;
 
     // robot buffs
-  uint8_t recovery_buff;
-  uint8_t cooling_buff;  
-	uint8_t defence_buff;
-	uint8_t vulnerability_buff;
-	uint16_t attack_buff;
+    uint8_t recovery_buff;
+    uint8_t cooling_buff;
+    uint8_t defence_buff;
+    uint8_t vulnerability_buff;
+    uint16_t attack_buff;
 
     // robot position
     float x;
@@ -184,6 +186,7 @@ typedef struct MotionRx {
     uint8_t checksum;     // 第 44 位 (校验位)
 } MotionRx_t;
 // extern size_t MotionRxSize = sizeof(MotionRx_t);
+extern MotionRx_t motion_rx;
 
 void usb_task_(void const *argument);
 static void projectile_tx_struct_init(void);

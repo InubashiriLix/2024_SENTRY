@@ -22,11 +22,7 @@
                 "command": "extension.execute",
                 "priority": 4
             }
-        ],
-        "files.associations": {
-            "usb_task.h": "c",
-            "chassis_power_control.h": "c"
-        }
+        ]
     },
     "extensions": {}
 }

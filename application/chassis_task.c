@@ -28,6 +28,7 @@
 #include "detect_task.h"
 #include "INS_task.h"
 #include "chassis_power_control.h"
+#include "usb_task.h"
 
 #include "referee.h"
 extern uint8_t cap_state;
@@ -150,6 +151,12 @@ void chassis_task(void const *pvParameters)
     //set chassis control mode
     //设置底盘控制模式
     chassis_set_mode(&chassis_move);
+    // TODO: right up -> sentry 
+    if (chassis_move.chassis_RC->rc.s[0] == RC_SW_UP) {
+      chassis_move.vx = motion_rx.linear_x;
+      chassis_move.vy = motion_rx.linear_y;
+      chassis_move.wz = motion_rx.angular_z;
+    }
     //when mode changes, some data save
     //模式切换数据保存
     chassis_mode_change_control_transit(&chassis_move);
