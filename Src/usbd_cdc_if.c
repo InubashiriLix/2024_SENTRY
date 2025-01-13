@@ -36,7 +36,7 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-extern vision_rx_t vision_rx;
+// extern vision_rx_t vision_rx;
 extern MotionRx_t motion_rx;
 uint8_t received_data[64];
 size_t rx_motion_size = sizeof(MotionRx_t);
@@ -337,7 +337,7 @@ uint8_t get_vision_state()
   {
     return 0;
   }
-  else if (vision_rx.target_found)
+  else if (motion_rx.target_found)
   {
     if (rc_ctrl.mouse.press_r)
     {

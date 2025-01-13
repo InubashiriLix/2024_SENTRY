@@ -45,7 +45,7 @@ static void get_vision_data(void);
 static void get_yaw_data(uint8_t array);
 static void get_pitch_data(uint8_t array);
 
-vision_rx_t vision_rx;
+// vision_rx_t vision_rx;
 MotionRx_t motion_rx;
 ProjectileTx_slow_t projectile_tx_slow;
 ProjectileTx_fast_t projectile_tx_fast;

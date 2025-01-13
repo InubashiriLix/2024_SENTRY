@@ -652,7 +652,6 @@
           "beforeBuildTasks": [],
           "afterBuildTasks": [],
           "global": {
-            "use-microLIB": false,
             "output-debug-info": "enable"
           },
           "c/cpp-compiler": {
@@ -666,7 +665,6 @@
           "asm-compiler": {},
           "linker": {
             "output-format": "elf",
-            "xo-base": "",
             "ro-base": "0x08000000",
             "rw-base": "0x20000000"
           }

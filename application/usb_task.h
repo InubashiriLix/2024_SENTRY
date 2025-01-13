@@ -37,14 +37,14 @@ typedef enum {
     CLASSIC = 0,
     WIND    = 1,
 } vision_mode_e;
-typedef __packed struct
-{
-    uint8_t SOF;
-    uint8_t target_found; // it is renamed as the autofire in the motion_rx struct
-    fp32 pitch_angle;
-    fp32 yaw_angle;
-    uint8_t checksum;
-} vision_rx_t;
+// typedef __packed struct
+// {
+//     uint8_t SOF;
+//     uint8_t target_found; // it is renamed as the autofire in the motion_rx struct
+//     fp32 pitch_angle;
+//     fp32 yaw_angle;
+//     uint8_t checksum;
+// } vision_rx_t;
 
 typedef struct
 {
@@ -171,8 +171,8 @@ typedef struct __attribute__((packed)) {
 typedef struct MotionRx {
     // the type of the message
     uint8_t header;       // 第 0-3 位
-    float yaw;            // 第 4-7 位
-    float pitch;          // 第 4-11 位
+    float yaw_angle;            // 第 4-7 位
+    float pitch_angle;          // 第 4-11 位
     float pitch_actual;        // 第 8-15 位
     uint8_t raw1[4];      // 第 12-19 位
     float yaw_actual;        // 第 12-23 位
@@ -180,7 +180,7 @@ typedef struct MotionRx {
     float linear_x;       // 第 24～31 位
     float linear_y;       // 第 28～35 位
     float angular_z;      // 第 32～39 位
-    uint8_t autofire;     // 第 41 位 the autofire is to tell the robot to fire
+    uint8_t target_found;     // 第 41 位 the autofire is to tell the robot to fire
     uint8_t placeholder2; // 第 42 位
     uint8_t placeholder3; // 第 43 位
     uint8_t checksum;     // 第 44 位 (校验位)

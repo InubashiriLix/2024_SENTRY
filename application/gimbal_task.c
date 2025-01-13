@@ -41,7 +41,8 @@
 #include "shoot.h"
 #include "pid.h"
 #include "usb_task.h"
-extern vision_rx_t vision_rx;
+// extern vision_rx_t vision_rx;
+extern MotionRx_t motion_rx;
 //motor enconde value format, range[0-8191]
 //电机编码值规整 0—8191
 #define ecd_format(ecd)         \
@@ -862,10 +863,10 @@ static void gimbal_set_control(gimbal_control_t *set_control)
 
     fp32 add_yaw_angle = 0.0f;
     fp32 add_pitch_angle = 0.0f;
-		if(vision_rx.target_found&&(set_control->gimbal_rc_ctrl->rc.s[GIMBAL_MODE_CHANNEL]==1||set_control->gimbal_rc_ctrl->mouse.press_r)){
-			set_control->gimbal_yaw_motor.absolute_angle_set = vision_rx.yaw_angle;
-			set_control->gimbal_pitch_motor.absolute_angle_set = vision_rx.pitch_angle;
-						vision_rx.target_found = 0;
+		if(motion_rx.target_found&&(set_control->gimbal_rc_ctrl->rc.s[GIMBAL_MODE_CHANNEL]==1||set_control->gimbal_rc_ctrl->mouse.press_r)){
+			set_control->gimbal_yaw_motor.absolute_angle_set = motion_rx.yaw_angle;
+			set_control->gimbal_pitch_motor.absolute_angle_set = motion_rx.pitch_angle;
+						motion_rx.target_found = 0;
 		}else
     gimbal_behaviour_control_set(&add_yaw_angle, &add_pitch_angle, set_control);
     //yaw电机模式控制
