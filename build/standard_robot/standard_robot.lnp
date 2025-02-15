@@ -1,4 +1,4 @@
---cpu Cortex-M4.fp --scatter "d:/local_repository/2022_Single-Dual_Shooter_Infantry-2024/build/standard_robot/standard_robot.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--cpu Cortex-M4.fp --scatter "e:/1-02 GM/2024_SENTRY/2022_Single-Dual_Shooter_Infantry-2024/build/standard_robot/standard_robot.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
 --list .\build\standard_robot\standard_robot.map
 .\build\standard_robot\.obj\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.o
 .\build\standard_robot\.obj\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.o

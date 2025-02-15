@@ -167,17 +167,16 @@ void chassis_task(void const *pvParameters)
     //chassis control pid calculate
     //µ×ÅÌ¿ØÖÆPID¼ÆËã
 
-// NOTE: this way sir
-    // TODO: right up -> sentry 
+    // NOTE: this way sir
+    // TODO: right up -> sentry
     if (chassis_move.chassis_RC->rc.s[0] == RC_SW_UP) {
-      debug_flag_1 = 1;
-      // chassis_move.vx = motion_rx.linear_x;
-      // chassis_move.vy = motion_rx.linear_y;
-      // chassis_move.wz = motion_rx.angular_z;
-
-      chassis_move.vx_set = motion_rx.linear_x;
-      chassis_move.vy_set = motion_rx.linear_y;
-      chassis_move.wz_set = motion_rx.angular_z;
+      
+        {
+            debug_flag_1        = 1;
+            chassis_move.vx_set = motion_rx.linear_x;
+            chassis_move.vy_set = motion_rx.linear_y;
+            chassis_move.wz_set = motion_rx.angular_z;
+        }
     }
 
     chassis_control_loop(&chassis_move);

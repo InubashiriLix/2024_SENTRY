@@ -2,12 +2,12 @@
     "name": "standard_robot",
     "target": "standard_robot",
     "toolchain": "AC5",
-    "toolchainLocation": "D:\\Keil_v5\\ARM\\ARMCC",
-    "toolchainCfgFile": "c:\\Users\\WJJ\\.vscode\\extensions\\cl.eide-3.19.6\\res\\data\\models\\win32/arm.v5.model.json",
+    "toolchainLocation": "E:\\G-Keil\\ARM\\ARMCC",
+    "toolchainCfgFile": "c:\\Users\\lixin\\.vscode\\extensions\\cl.eide-3.21.1\\res\\data\\models\\win32/arm.v5.model.json",
     "buildMode": "fast|multhread",
     "showRepathOnLog": true,
-    "threadNum": 32,
-    "rootDir": "d:\\local_repository\\2022_Single-Dual_Shooter_Infantry-2024",
+    "threadNum": 16,
+    "rootDir": "e:\\1-02 GM\\2024_SENTRY\\2022_Single-Dual_Shooter_Infantry-2024",
     "dumpPath": "build\\standard_robot",
     "outDir": "build\\standard_robot",
     "ram": 131072,
@@ -166,14 +166,13 @@
         "components/support/mem_mang4.c"
     ],
     "sourceParams": {},
-    "sourceParamsMtime": 1734009277447.873,
     "options": {
         "version": 4,
         "beforeBuildTasks": [],
         "afterBuildTasks": [
             {
                 "name": "axf to elf",
-                "command": "axf2elf -d \"D:\\Keil_v5\\ARM\\ARMCC\" -i \"${outDir}\\standard_robot.axf\" -o \"${outDir}\\standard_robot.elf\" > \"${outDir}\\axf2elf.log\""
+                "command": "axf2elf -d \"E:\\G-Keil\\ARM\\ARMCC\" -i \"${outDir}\\standard_robot.axf\" -o \"${outDir}\\standard_robot.elf\" > \"${outDir}\\axf2elf.log\""
             }
         ],
         "global": {
@@ -199,22 +198,22 @@
             "ro-base": "0x08000000",
             "rw-base": "0x20000000",
             "link-scatter": [
-                "\"d:/local_repository/2022_Single-Dual_Shooter_Infantry-2024/build/standard_robot/standard_robot.sct\""
+                "\"e:/1-02 GM/2024_SENTRY/2022_Single-Dual_Shooter_Infantry-2024/build/standard_robot/standard_robot.sct\""
             ]
         }
     },
     "env": {
         "KEIL_OUTPUT_DIR": "standard_board_c",
         "KEIL_OUTPUT_NAME": "standard_board_c",
-        "workspaceFolder": "d:\\local_repository\\2022_Single-Dual_Shooter_Infantry-2024",
+        "workspaceFolder": "e:\\1-02 GM\\2024_SENTRY\\2022_Single-Dual_Shooter_Infantry-2024",
         "workspaceFolderBasename": "2022_Single-Dual_Shooter_Infantry-2024",
-        "OutDir": "d:\\local_repository\\2022_Single-Dual_Shooter_Infantry-2024\\build\\standard_robot",
+        "OutDir": "e:\\1-02 GM\\2024_SENTRY\\2022_Single-Dual_Shooter_Infantry-2024\\build\\standard_robot",
         "OutDirRoot": "build",
         "OutDirBase": "build\\standard_robot",
         "ProjectName": "standard_robot",
         "ConfigName": "standard_robot",
-        "ProjectRoot": "d:\\local_repository\\2022_Single-Dual_Shooter_Infantry-2024",
-        "ExecutableName": "d:\\local_repository\\2022_Single-Dual_Shooter_Infantry-2024\\build\\standard_robot\\standard_robot",
+        "ProjectRoot": "e:\\1-02 GM\\2024_SENTRY\\2022_Single-Dual_Shooter_Infantry-2024",
+        "ExecutableName": "e:\\1-02 GM\\2024_SENTRY\\2022_Single-Dual_Shooter_Infantry-2024\\build\\standard_robot\\standard_robot",
         "ChipPackDir": "",
         "ChipName": "",
         "SYS_Platform": "win32",
@@ -223,15 +222,10 @@
         "SYS_PathSep": ";",
         "SYS_PathSeparator": ";",
         "SYS_EOL": "\r\n",
-        "ToolchainRoot": "D:\\Keil_v5\\ARM\\ARMCC"
+        "EIDE_BUILDER_DIR": "c:\\Users\\lixin\\.vscode\\extensions\\cl.eide-3.21.1\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.0.1",
+        "EIDE_MSYS": "C:\\Users\\lixin\\.eide\\bin\\builder\\msys\\bin",
+        "ToolchainRoot": "E:\\G-Keil\\ARM\\ARMCC"
     },
-    "sha": {
-        "c/cpp-defines": "06a75c81112b5de2942c9de4742bab14",
-        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
-        "afterBuildTasks": "b1a83de9c6f4c7a6924c0f31625da791",
-        "global": "a620fd78ce68cb35fdf638caa176e530",
-        "c/cpp-compiler": "d7af9df22cccb3b57acdeb6525e3b9d0",
-        "asm-compiler": "99914b932bd37a50b983c5e7c90ae93b",
-        "linker": "78fbe495fd0da85caefd7b5b3b00d2b1"
-    }
+    "sysPaths": []
 }

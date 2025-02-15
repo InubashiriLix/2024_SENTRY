@@ -14,7 +14,7 @@
 
 ## 机器人ID说明
 
-此事在裁判系统说明书里有说明 v1.7.0
+此事在裁判系统说明书里亦有记载 v1.7.0
 <https://www.robomaster.com/zh-CN/resource/pages/announcement/1768>
 
 '''
@@ -42,4 +42,6 @@
 包中位置: projectile_tx_slow.current_side_color
 uint8_t
 1红 2蓝 0未知
+
+哦对了，加上了将上位机发送的消息（pitch，yaw，linearxy, angular_z)发送至tasks的东西，比较草台，记得美化
 

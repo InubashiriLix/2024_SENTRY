@@ -81,5 +81,5 @@
 .\build\standard_robot\.obj\Src\usbd_cdc_if.o: application\chassis_power_control.h
 .\build\standard_robot\.obj\Src\usbd_cdc_if.o: application\referee.h
 .\build\standard_robot\.obj\Src\usbd_cdc_if.o: application/protocol/protocol.h
-.\build\standard_robot\.obj\Src\usbd_cdc_if.o: components/support/crc8_crc16.h
+.\build\standard_robot\.obj\Src\usbd_cdc_if.o: components/support/CRC8_CRC16.h
 .\build\standard_robot\.obj\Src\usbd_cdc_if.o: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h

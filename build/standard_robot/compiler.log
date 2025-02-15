@@ -1,14 +1,14 @@
 >>> cc
 
-".\Src\freertos.c", line 237: Warning:  #111-D: statement is unreachable
-          free(pcWriteBuffer);
-          ^
-.\Src\freertos.c: 1 warning, 0 errors
 ".\Middlewares\Third_Party\FreeRTOS\Source\tasks.c", line 1989: Warning:  #223-D: function "ConfigureTimeForRunTimeStats" declared implicitly
   		portCONFIGURE_TIMER_FOR_RUN_TIME_STATS();
   		^
 .\Middlewares\Third_Party\FreeRTOS\Source\tasks.c: 1 warning, 0 errors
-".\Src\usbd_cdc_if.c", line 261: Warning:  #177-D: variable "xHigherPriorityTaskWoken"  was declared but never referenced
+".\Src\freertos.c", line 237: Warning:  #111-D: statement is unreachable
+          free(pcWriteBuffer);
+          ^
+.\Src\freertos.c: 1 warning, 0 errors
+".\Src\usbd_cdc_if.c", line 264: Warning:  #177-D: variable "xHigherPriorityTaskWoken"  was declared but never referenced
   static BaseType_t xHigherPriorityTaskWoken;
                     ^
 .\Src\usbd_cdc_if.c: 1 warning, 0 errors
@@ -16,6 +16,67 @@
           if (fabsf(pitch_angle - ui_pitch_state) >= 0.01) {
               ^
 .\application\UI_label.c: 1 warning, 0 errors
+".\application\gimbal_task.c", line 638: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return (current_state - last_state * 0.9817) / (0.0009908 * 18.5);
+                              ^
+.\application\gimbal_task.c: 1 warning, 0 errors
+".\application\chassis_task.c", line 719: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    wheel_speed[0] = (-vx_set*sqrt(2)/2 - vy_set*sqrt(2)/2 + wz_set * 0.4);//0.0763;
+                                                             ^
+".\application\chassis_task.c", line 720: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    wheel_speed[1] = (vx_set*sqrt(2)/2 - vy_set*sqrt(2)/2 + wz_set * 0.4);//0.0763;
+                                                            ^
+".\application\chassis_task.c", line 721: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    wheel_speed[2] = (vx_set*sqrt(2)/2 + vy_set*sqrt(2)/2 + wz_set * 0.4);//0.0763;
+                                                            ^
+".\application\chassis_task.c", line 722: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    wheel_speed[3] = (-vx_set*sqrt(2)/2 + vy_set*sqrt(2)/2 + wz_set * 0.4);//0.0763;
+                                                             ^
+.\application\chassis_task.c: 4 warnings, 0 errors
+".\application\shoot.c", line 284: Warning:  #223-D: function "get_shoot_heat1_limit_and_heat0" declared implicitly
+      get_shoot_heat1_limit_and_heat0(&shoot_control.heat_limit, &shoot_control.heat);
+      ^
+".\application\shoot.c", line 285: Warning:  #223-D: function "get_shoot_heat2_limit_and_heat1" declared implicitly
+      get_shoot_heat2_limit_and_heat1(&shoot_control.heat_limit2,&shoot_control.heat2);
+      ^
+".\application\shoot.c", line 326: Warning:  #188-D: enumerated type mixed with another type
+          shoot_control.dual_mode = (shoot_control.dual_mode+1)%2;
+                                  ^
+".\application\shoot.c", line 355: Warning:  #188-D: enumerated type mixed with another type
+          flag = 0;
+               ^
+".\application\shoot.c", line 198: Warning:  #177-D: variable "fric_state"  was declared but never referenced
+      static uint8_t fric_state = 0;
+                     ^
+".\application\shoot.c", line 490: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      if (rad_format(shoot_control.set_angle - shoot_control.angle) > 0.04)
+          ^
+.\application\shoot.c: 6 warnings, 0 errors
+".\application\test_task.c", line 90: Warning:  #177-D: function "buzzer_warn_error"  was declared but never referenced
+  static void buzzer_warn_error(uint8_t num)
+              ^
+.\application\test_task.c: 1 warning, 0 errors
+".\application\vision.c", line 138: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      vision_kf[0].F_data[6] = vision_kf[2].F_data[6] = vision_kf[1].F_data[6] = 0.5 * Ts * Ts;
+                                                                                       ^
+".\application\vision.c", line 163: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      delay_trans_matrix_data[6] = 0.5 * horizon * horizon;
+                                         ^
+".\application\vision.c", line 235: Warning:  #177-D: function "Vision_AutoShoot_Predict"  was declared but never referenced
+  static void Vision_AutoShoot_Predict(void) {
+              ^
+".\application\vision.c", line 280: Warning:  #177-D: function "Vision_Windmill_Predict"  was declared but never referenced
+  static void Vision_Windmill_Predict(void) {}
+              ^
+.\application\vision.c: 4 warnings, 0 errors
+".\application\usb_task.c", line 342: Warning:  #177-D: function "usb_printf"  was declared but never referenced
+  static void usb_printf(const char *fmt, ...)
+              ^
+.\application\usb_task.c: 1 warning, 0 errors
+".\components\controller\pid.c", line 64: Warning:  #940-D: missing return statement at end of non-void function "NominalDOB_Update" 
+  }
+  ^
+.\components\controller\pid.c: 1 warning, 0 errors
 ".\application\UI_car.c", line 247: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
       if (0 <= b_deg && b_deg < 360) {
                ^
@@ -92,74 +153,7 @@
               c = COS_FORM[b_deg];
                            ^
 .\application\UI_car.c: 25 warnings, 0 errors
-".\application\chassis_task.c", line 699: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
-    wheel_speed[0] = (-vx_set*sqrt(2)/2 - vy_set*sqrt(2)/2 + wz_set * 0.4);//0.0763;
-                                                             ^
-".\application\chassis_task.c", line 700: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
-    wheel_speed[1] = (vx_set*sqrt(2)/2 - vy_set*sqrt(2)/2 + wz_set * 0.4);//0.0763;
-                                                            ^
-".\application\chassis_task.c", line 701: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
-    wheel_speed[2] = (vx_set*sqrt(2)/2 + vy_set*sqrt(2)/2 + wz_set * 0.4);//0.0763;
-                                                            ^
-".\application\chassis_task.c", line 702: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
-    wheel_speed[3] = (-vx_set*sqrt(2)/2 + vy_set*sqrt(2)/2 + wz_set * 0.4);//0.0763;
-                                                             ^
-.\application\chassis_task.c: 4 warnings, 0 errors
-".\application\test_task.c", line 90: Warning:  #177-D: function "buzzer_warn_error"  was declared but never referenced
-  static void buzzer_warn_error(uint8_t num)
-              ^
-.\application\test_task.c: 1 warning, 0 errors
-".\application\gimbal_task.c", line 637: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
-      return (current_state - last_state * 0.9817) / (0.0009908 * 18.5);
-                              ^
-.\application\gimbal_task.c: 1 warning, 0 errors
-".\application\usb_task.c", line 150: Warning:  #223-D: function "get_bullet_speed" declared implicitly
-  	vision_data.bullet_speed = get_bullet_speed();
-  	                           ^
-".\application\usb_task.c", line 35: Warning:  #177-D: function "usb_printf"  was declared but never referenced
-  static void usb_printf(const char *fmt, ...);
-              ^
-.\application\usb_task.c: 2 warnings, 0 errors
-".\application\vision.c", line 138: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
-      vision_kf[0].F_data[6] = vision_kf[2].F_data[6] = vision_kf[1].F_data[6] = 0.5 * Ts * Ts;
-                                                                                       ^
-".\application\vision.c", line 163: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
-      delay_trans_matrix_data[6] = 0.5 * horizon * horizon;
-                                         ^
-".\application\vision.c", line 220: Warning:  #223-D: function "get_bullet_speed" declared implicitly
-      pkg.bullet_v = get_bullet_speed();
-                     ^
-".\application\vision.c", line 235: Warning:  #177-D: function "Vision_AutoShoot_Predict"  was declared but never referenced
-  static void Vision_AutoShoot_Predict(void) {
-              ^
-".\application\vision.c", line 280: Warning:  #177-D: function "Vision_Windmill_Predict"  was declared but never referenced
-  static void Vision_Windmill_Predict(void) {}
-              ^
-.\application\vision.c: 5 warnings, 0 errors
-".\application\shoot.c", line 284: Warning:  #223-D: function "get_shoot_heat1_limit_and_heat0" declared implicitly
-      get_shoot_heat1_limit_and_heat0(&shoot_control.heat_limit, &shoot_control.heat);
-      ^
-".\application\shoot.c", line 285: Warning:  #223-D: function "get_shoot_heat2_limit_and_heat1" declared implicitly
-      get_shoot_heat2_limit_and_heat1(&shoot_control.heat_limit2,&shoot_control.heat2);
-      ^
-".\application\shoot.c", line 326: Warning:  #188-D: enumerated type mixed with another type
-          shoot_control.dual_mode = (shoot_control.dual_mode+1)%2;
-                                  ^
-".\application\shoot.c", line 355: Warning:  #188-D: enumerated type mixed with another type
-          flag = 0;
-               ^
-".\application\shoot.c", line 198: Warning:  #177-D: variable "fric_state"  was declared but never referenced
-      static uint8_t fric_state = 0;
-                     ^
-".\application\shoot.c", line 490: Warning:  #1035-D: single-precision operand implicitly converted to double-precision
-      if (rad_format(shoot_control.set_angle - shoot_control.angle) > 0.04)
-          ^
-.\application\shoot.c: 6 warnings, 0 errors
-".\components\controller\pid.c", line 64: Warning:  #940-D: missing return statement at end of non-void function "NominalDOB_Update" 
-  }
-  ^
-.\components\controller\pid.c: 1 warning, 0 errors
 
 >>> ld
 
-Program Size: Code=129622 RO-data=11366 RW-data=1768 ZI-data=59240  
+Program Size: Code=129030 RO-data=11382 RW-data=1800 ZI-data=60016  
