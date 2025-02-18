@@ -181,7 +181,7 @@ typedef struct MotionRx {
     float linear_y;       // 第 28～35 位
     float angular_z;      // 第 32～39 位
     uint8_t target_found;     // 第 41 位 the autofire is to tell the robot to fire
-    uint8_t placeholder2; // 第 42 位
+    uint8_t shoot_or_not; // 第 42 位
     uint8_t placeholder3; // 第 43 位
     uint8_t checksum;     // 第 44 位 (校验位)
 } MotionRx_t;

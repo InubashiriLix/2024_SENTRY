@@ -118,14 +118,12 @@ void shoot_init(void)
 int16_t *shoot_control_loop(void)
 {
 
-    shoot_set_mode();        //设置状态机
-    shoot_feedback_update(); //更新数据
-    if(shoot_control.trigger_mode == LOW_SHOOT)
-    {
-        trigger_speed = 5;
-    }
-    else
-    {
+    shoot_set_mode();        // 设置状态机
+    shoot_feedback_update(); // 更新数据
+    // NOTE: if the motion_rx recrieve the shoot_or_not == 1, then shoot slowly
+    if (shoot_control.trigger_mode == LOW_SHOOT) {
+        if (shoot_or_not) == 1 trigger_speed = 5;
+    } else {
         trigger_speed = 15;
     }
     if (shoot_control.shoot_mode == SHOOT_STOP)
@@ -421,7 +419,7 @@ static void shoot_feedback_update(void)
         shoot_control.rc_s_time = 0;
     }
 
-    if (!toe_is_error(REFEREE_TOE))
+    if (toe_is_error(REFEREE_TOE))
     {/*
         if (shoot_control.shoot_state->shooter_id1_17mm_speed_limit == 15)
         {

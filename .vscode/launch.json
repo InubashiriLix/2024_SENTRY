@@ -1,19 +1,19 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "liveWatch": {
-                "enabled": true,
-                "samplesPerSecond": 4
-            },
-            "cwd": "${workspaceRoot}",
-            "type": "cortex-debug",
-            "request": "launch",
-            "name": "standard_robot: OpenOCD",
-            "servertype": "openocd",
-            "executable": "build/standard_robot/standard_robot.elf",
-            "runToEntryPoint": "main",
-            "configFiles": []
-        }
+      {
+        "liveWatch": {
+          "enabled": true,
+          "samplesPerSecond": 4
+        },
+        "cwd": "${workspaceRoot}",
+        "type": "cortex-debug",
+        "request": "launch",
+        "name": "standard_robot: OpenOCD",
+        "servertype": "openocd",
+        "executable": "build/standard_robot/standard_robot.elf",
+        "runToEntryPoint": "main",
+        "configFiles": ["interface/stlink.cfg", "target/stm32f4x.cfg"]
+      }
     ]
 }
