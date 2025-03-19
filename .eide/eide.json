@@ -583,12 +583,17 @@
         },
         "options": "null"
       },
-      "uploader": "OpenOCD",
+      "uploader": "STLink",
       "uploadConfig": {
         "bin": "",
-        "target": "stm32f4x",
-        "interface": "cmsis-dap",
-        "baseAddr": "0x08000000"
+        "proType": "SWD",
+        "resetMode": "default",
+        "runAfterProgram": true,
+        "speed": 4000,
+        "address": "0x8000000",
+        "elFile": "None",
+        "optionBytes": ".eide/standard_robot.st.option.bytes.ini",
+        "otherCmds": ""
       },
       "uploadConfigMap": {
         "JLink": {
@@ -612,6 +617,12 @@
           "elFile": "None",
           "optionBytes": ".eide/standard_robot.st.option.bytes.ini",
           "otherCmds": ""
+        },
+        "OpenOCD": {
+          "bin": "",
+          "target": "stm32f4x",
+          "interface": "cmsis-dap",
+          "baseAddr": "0x08000000"
         }
       },
       "custom_dep": {

@@ -37,14 +37,6 @@ typedef enum {
     CLASSIC = 0,
     WIND    = 1,
 } vision_mode_e;
-// typedef __packed struct
-// {
-//     uint8_t SOF;
-//     uint8_t target_found; // it is renamed as the autofire in the motion_rx struct
-//     fp32 pitch_angle;
-//     fp32 yaw_angle;
-//     uint8_t checksum;
-// } vision_rx_t;
 
 typedef struct
 {

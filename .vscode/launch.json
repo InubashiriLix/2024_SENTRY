@@ -13,7 +13,10 @@
         "servertype": "openocd",
         "executable": "build/standard_robot/standard_robot.elf",
         "runToEntryPoint": "main",
-        "configFiles": ["interface/stlink.cfg", "target/stm32f4x.cfg"]
-      }
+        "configFiles": [
+            "interface/cmsis-dap.cfg",
+            "target/stm32f4x.cfg"
+        ]
+    }
     ]
 }

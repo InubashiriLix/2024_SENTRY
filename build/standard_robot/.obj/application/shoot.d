@@ -72,4 +72,10 @@
 .\build\standard_robot\.obj\application\shoot.o: Drivers/CMSIS/Include/core_cm4.h
 .\build\standard_robot\.obj\application\shoot.o: .\application\gimbal_behaviour.h
 .\build\standard_robot\.obj\application\shoot.o: .\application\detect_task.h
+.\build\standard_robot\.obj\application\shoot.o: .\application\usb_task.h
+.\build\standard_robot\.obj\application\shoot.o: .\application\chassis_task.h
+.\build\standard_robot\.obj\application\shoot.o: .\application\chassis_behaviour.h
+.\build\standard_robot\.obj\application\shoot.o: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+.\build\standard_robot\.obj\application\shoot.o: .\application\INS_task.h
+.\build\standard_robot\.obj\application\shoot.o: .\application\chassis_power_control.h
 .\build\standard_robot\.obj\application\shoot.o: .\application\vision.h

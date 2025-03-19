@@ -30,6 +30,8 @@
 #include "detect_task.h"
 #include "pid.h"
 #include "referee.h"
+#include "usb_task.h"
+#include "remote_control.h"
 extern ext_game_robot_state_t robot_state;
 #define shoot_laser_on() laser_on()   //激光开启宏定义
 #define shoot_laser_off() laser_off() //激光关闭宏定义
@@ -120,12 +122,13 @@ int16_t *shoot_control_loop(void)
 
     shoot_set_mode();        // 设置状态机
     shoot_feedback_update(); // 更新数据
-    // NOTE: if the motion_rx recrieve the shoot_or_not == 1, then shoot slowly
+
     if (shoot_control.trigger_mode == LOW_SHOOT) {
-        if (shoot_or_not) == 1 trigger_speed = 5;
+        trigger_speed = 5;
     } else {
         trigger_speed = 15;
     }
+
     if (shoot_control.shoot_mode == SHOOT_STOP)
     {
         //设置拨弹轮的速度
@@ -192,71 +195,72 @@ int16_t *shoot_control_loop(void)
 static void shoot_set_mode(void)
 {
 
-    static int8_t last_s = RC_SW_UP;
-    static uint8_t fric_state = 0;
+    static int8_t last_s       = RC_SW_UP;
+    static uint8_t fric_state  = 0;
     static uint16_t press_time = 0;
-    uint8_t threshthold = 20;
-    //上拨判断， 一次开启，再次关闭
-    if ((switch_is_up(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && !switch_is_up(last_s) && shoot_control.shoot_mode == SHOOT_STOP))
-    {
+    uint8_t threshthold        = 20;
+    // 上拨判断， 一次开启，再次关闭
+    if ((switch_is_up(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && !switch_is_up(last_s) && shoot_control.shoot_mode == SHOOT_STOP)) {
         shoot_control.shoot_mode = SHOOT_READY;
-    }
-    else if ((switch_is_up(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && !switch_is_up(last_s) && shoot_control.shoot_mode != SHOOT_STOP))
-    {
+    } else if ((switch_is_up(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && !switch_is_up(last_s) && shoot_control.shoot_mode != SHOOT_STOP)) {
         shoot_control.shoot_mode = SHOOT_STOP;
     }
 
-    //处于中档， 可以使用键盘开启摩擦轮
-    if (switch_is_mid(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && (shoot_control.shoot_rc->key.v & SHOOT_ON_KEYBOARD && !(shoot_control.shoot_rc->key.v & KEY_PRESSED_OFFSET_CTRL)) && shoot_control.shoot_mode == SHOOT_STOP)
-    {
+    // 处于中档， 可以使用键盘开启摩擦轮
+    if (switch_is_mid(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && (shoot_control.shoot_rc->key.v & SHOOT_ON_KEYBOARD && !(shoot_control.shoot_rc->key.v & KEY_PRESSED_OFFSET_CTRL)) && shoot_control.shoot_mode == SHOOT_STOP) {
         shoot_control.shoot_mode = SHOOT_READY;
     }
-        //处于中档， 可以使用键盘关闭摩擦轮
-    else if (switch_is_mid(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && (shoot_control.shoot_rc->key.v & SHOOT_ON_KEYBOARD && (shoot_control.shoot_rc->key.v & KEY_PRESSED_OFFSET_CTRL)) && shoot_control.shoot_mode != SHOOT_STOP)
-    {
+
+    // 处于中档， 可以使用键盘关闭摩擦轮
+    else if (switch_is_mid(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && (shoot_control.shoot_rc->key.v & SHOOT_ON_KEYBOARD && (shoot_control.shoot_rc->key.v & KEY_PRESSED_OFFSET_CTRL)) && shoot_control.shoot_mode != SHOOT_STOP) {
         shoot_control.shoot_mode = SHOOT_STOP;
     }
-    if ((switch_is_mid(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && !switch_is_mid(last_s) && shoot_control.shoot_mode == SHOOT_CONTINUE_BULLET))
-    {
+    if ((switch_is_mid(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && !switch_is_mid(last_s) && shoot_control.shoot_mode == SHOOT_CONTINUE_BULLET)) {
         shoot_control.shoot_mode = SHOOT_READY;
     }
-		if(switch_is_mid(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]))
-		{
-			press_time = 0;
-		}
-    if (shoot_control.shoot_mode == SHOOT_READY)
-    {
-				if(switch_is_down(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && !switch_is_down(last_s))
-				{
-					shoot_control.shoot_mode = SHOOT_BULLET;
-				}
-        if ((switch_is_down(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL])))
-        {
-						press_time++;
-						if(press_time>1500)
-						{
-							shoot_control.shoot_mode = SHOOT_CONTINUE_BULLET;
-							press_time = 200;
-						}
+    if (switch_is_mid(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL])) {
+        press_time = 0;
+    }
+    if (shoot_control.shoot_mode == SHOOT_READY) {
+
+        // NOTE: when the shoot decision is 1 and the left switch is mid, then shoot
+        // and only in the auto aim mode, this logic will work
+        if (shoot_control.shoot_rc->rc.s[GIMBAL_RC_MODE_CHANNEL] == RC_SW_UP) {
+            if (motion_rx.shoot_or_not == 1) {
+                shoot_control.shoot_mode = SHOOT_BULLET;
+                press_time++;
+                if (press_time >= 300) {
+                    shoot_control.shoot_mode = SHOOT_CONTINUE_BULLET;
+                    press_time               = 300;
+                }
+            } else {
+                press_time = 0;
+                shoot_control.shoot_mode = SHOOT_READY;
+            }
         }
 
+        if (switch_is_down(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && !switch_is_down(last_s)) {
+            shoot_control.shoot_mode = SHOOT_BULLET;
+        }
+        if ((switch_is_down(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]))) {
+            press_time++;
+            if (press_time > 1500) {
+                shoot_control.shoot_mode = SHOOT_CONTINUE_BULLET;
+                press_time               = 200;
+            }
+        }
     }
 
-
-    if(shoot_control.shoot_rc->key.v & KEY_PRESSED_OFFSET_C)
-    {
-        stop_time=650;
+    if (shoot_control.shoot_rc->key.v & KEY_PRESSED_OFFSET_C) {
+        stop_time = 650;
     }
-    if (switch_is_mid(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && (shoot_control.shoot_mode == SHOOT_READY||shoot_control.shoot_mode == SHOOT_BULLET))
-    {
+    if (switch_is_mid(shoot_control.shoot_rc->rc.s[SHOOT_RC_MODE_CHANNEL]) && (shoot_control.shoot_mode == SHOOT_READY || shoot_control.shoot_mode == SHOOT_BULLET)) {
 
-        if ((shoot_control.press_l && shoot_control.last_press_l == 0) )
-        {
+        if ((shoot_control.press_l && shoot_control.last_press_l == 0)) {
             shoot_control.shoot_mode = SHOOT_BULLET;
         }
 
-        if(shoot_control.press_l_time==PRESS_LONG_TIME)
-        {
+        if (shoot_control.press_l_time == PRESS_LONG_TIME) {
             shoot_control.shoot_mode = SHOOT_CONTINUE_BULLET;
         }
     }

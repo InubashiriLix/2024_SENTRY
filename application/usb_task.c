@@ -311,7 +311,8 @@ static void projectile_tx_fast_update(void)
 
     const float *q_ = get_INS_quat_point();
     for (int i = 0; i < 4; i++) {
-        projectile_tx_fast.q[i] = *(q_ + i * sizeof(float));
+        // projectile_tx_fast.q[i] = *(q_ + i * sizeof(float));
+        projectile_tx_fast.q[i] = get_INS_quat_point()[i];
     }
 
     projectile_tx_fast.yaw   = get_gimbal_point()->gimbal_yaw_motor.absolute_angle;

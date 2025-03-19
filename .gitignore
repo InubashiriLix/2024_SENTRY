@@ -8,3 +8,9 @@ MDK-ARM/standard_robot.uvoptx
 cmake-build-debug/
 CMakeLists.txt
 .idea/
+.history
+.history
+build
+build/standard_robot/.obj
+build
+build/standard_robot/.obj/Drivers

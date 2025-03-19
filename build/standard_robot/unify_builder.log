@@ -1,244 +1,119 @@
-[2024-12-13 03:08:43]	[info] incremental build: 115 source files changed
-These source files will be recompiled
----
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd_ex.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rng.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc_ex.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\MDK-ARM\startup_stm32f407xx.s': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\croutine.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\list.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\queue.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\tasks.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\timers.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\adc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\can.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\crc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\dma.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\freertos.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\gpio.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\i2c.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\main.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\rng.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\rtc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\spi.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\stm32f4xx_hal_msp.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\stm32f4xx_it.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\system_stm32f4xx.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\tim.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\usart.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\usb_device.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\usbd_cdc_if.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\usbd_conf.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\Src\usbd_desc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\CAN_receive.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\INS_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\RM_Cilent_UI.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\UI_ProgressBar.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\UI_car.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\UI_label.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\calibrate_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\chassis_behaviour.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\chassis_power_control.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\chassis_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\detect_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_behaviour.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\led_flow_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\referee.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\referee_usart_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\remote_control.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\servo_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\shoot.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\test_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\user_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\vision.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\application\voltage_task.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_adc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_buzzer.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_can.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_crc32.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_delay.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_flash.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_fric.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_i2c.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_imu_pwm.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_laser.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_led.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_rc.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_rng.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_servo_pwm.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_spi.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_usart.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\algorithm\AHRS_middleware.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\algorithm\kalman_filter.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\algorithm\user_lib.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\controller\pid.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\devices\BMI088Middleware.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\devices\BMI088driver.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\devices\ist8310driver.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\devices\ist8310driver_middleware.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\support\CRC8_CRC16.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\support\fifo.c': object (.o) file not exist
-'d:\local_repository\2022_Single-Dual_Shooter_Infantry-2024\components\support\mem_mang4.c': object (.o) file not exist
-
-[2024-12-13 03:08:45]	[done]
+[2025-03-14 23:19:40]	[done]
 	build successfully !
 
-[2025-02-14 23:35:45]	[info] incremental build: 115 source files changed
+[2025-03-14 23:28:02]	[done]
+	build successfully !
+
+[2025-03-14 23:33:21]	[info] incremental build: 1 source files changed
 These source files will be recompiled
 ---
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd_ex.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rng.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc_ex.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\MDK-ARM\startup_stm32f407xx.s': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\croutine.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\list.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\queue.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\tasks.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Middlewares\Third_Party\FreeRTOS\Source\timers.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\adc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\can.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\crc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\dma.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\freertos.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\gpio.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\i2c.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\main.c': source file has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\rng.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\rtc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\spi.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\stm32f4xx_hal_msp.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\stm32f4xx_it.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\system_stm32f4xx.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\tim.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\usart.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\usb_device.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\usbd_cdc_if.c': source file has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\usbd_conf.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\usbd_desc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\CAN_receive.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\INS_task.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\RM_Cilent_UI.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\UI_ProgressBar.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\UI_car.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\UI_label.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\calibrate_task.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\chassis_behaviour.c': source file has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\chassis_power_control.c': source file has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\chassis_task.c': source file has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\detect_task.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_behaviour.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.c': source file has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\led_flow_task.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\referee.c': source file has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\referee_usart_task.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\remote_control.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\servo_task.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\shoot.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\test_task.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.c': source file has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\user_task.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\vision.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\voltage_task.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_adc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_buzzer.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_can.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_crc32.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_delay.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_flash.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_fric.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_i2c.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_imu_pwm.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_laser.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_led.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_rc.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_rng.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_servo_pwm.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_spi.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_usart.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\algorithm\AHRS_middleware.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\algorithm\kalman_filter.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\algorithm\user_lib.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\controller\pid.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\devices\BMI088Middleware.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\devices\BMI088driver.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\devices\ist8310driver.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\devices\ist8310driver_middleware.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\support\CRC8_CRC16.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\support\fifo.c': compiler options has been changed.
-'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\components\support\mem_mang4.c': compiler options has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\shoot.c': source file has been changed.
 
-[2025-02-14 23:35:58]	[done]
+[2025-03-14 23:33:22]	[done]
+	build successfully !
+
+[2025-03-14 23:40:59]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\shoot.c': source file has been changed.
+
+[2025-03-14 23:41:01]	[done]
+	build successfully !
+
+[2025-03-14 23:43:51]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\shoot.c': source file has been changed.
+
+[2025-03-14 23:43:53]	[done]
+	build successfully !
+
+[2025-03-14 23:45:03]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\shoot.c': source file has been changed.
+
+[2025-03-14 23:45:05]	[done]
+	build successfully !
+
+[2025-03-15 14:13:22]	[done]
+	build successfully !
+
+[2025-03-15 14:48:14]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.c': source file has been changed.
+
+[2025-03-15 14:48:15]	[done]
+	build successfully !
+
+[2025-03-15 15:05:23]	[info] incremental build: 8 source files changed
+These source files will be recompiled
+---
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\freertos.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\main.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\usbd_cdc_if.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\UI_label.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\chassis_task.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\shoot.c': source file has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.h' has been changed.
+
+[2025-03-15 15:05:24]	[done]
+	build successfully !
+
+[2025-03-15 15:12:22]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.c': source file has been changed.
+
+[2025-03-15 15:12:23]	[done]
+	build successfully !
+
+[2025-03-15 19:32:50]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.c': source file has been changed.
+
+[2025-03-15 19:32:52]	[done]
+	build successfully !
+
+[2025-03-15 21:36:59]	[info] incremental build: 17 source files changed
+These source files will be recompiled
+---
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\freertos.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\main.c': source file has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\Src\usbd_cdc_if.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\UI_ProgressBar.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\UI_label.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\calibrate_task.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\chassis_behaviour.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\chassis_power_control.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\chassis_task.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_behaviour.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\referee.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\shoot.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\usb_task.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\user_task.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\vision.c': dependence 'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\application\gimbal_task.h' has been changed.
+'e:\1-02 GM\2024_SENTRY\2022_Single-Dual_Shooter_Infantry-2024\bsp\boards\bsp_buzzer.c': source file has been changed.
+
+[2025-03-15 21:37:01]	[done]
+	build successfully !
+
+[2025-03-15 21:46:33]	[done]
+	build successfully !
+
+[2025-03-15 22:14:06]	[done]
+	build successfully !
+
+[2025-03-18 22:53:11]	[done]
+	build successfully !
+
+[2025-03-18 22:53:29]	[done]
+	build successfully !
+
+[2025-03-19 00:18:40]	[done]
 	build successfully !
 
